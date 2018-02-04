@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/layout_padding"
+                android:paddingRight="@dimen/padding_center">
+
+                <TextView
+                    android:id="@+id/p1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="@dimen/pnames_margin_top"
+                    android:gravity="center"
+                    android:text="@string/player1_name"
+                    android:textColor="@color/heresy_dark_red"
+                    android:textSize="@dimen/pnames_text_size" />
+
+                <TextView
+                    android:id="@+id/player_1_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/score_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="56sp" />
+
+                <Button
+                    android:id="@+id/dt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addTwoForPlayer1"
+                    android:text="@string/ss"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/bf1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOneForPlayer1"
+                    android:text="@string/ss2"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/stw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOnlyOneForPlayer1"
+                    android:text="@string/stw"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/lms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOnlyOneForPlayer1"
+                    android:text="@string/a"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/tpof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOneForPlayer1"
+                    android:text="@string/tpof"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/changep1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="changeP1name"
+                    android:text="@string/chnm"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="@dimen/layout_padding"
+                android:paddingLeft="@dimen/padding_center">
+
+                <TextView
+                    android:id="@+id/p2name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="@dimen/pnames_margin_top"
+                    android:gravity="center"
+                    android:text="@string/player2_name"
+                    android:textColor="@color/heresy_dark_red"
+                    android:textSize="@dimen/pnames_text_size" />
+
+                <TextView
+                    android:id="@+id/player_2_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/score_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="56sp" />
+
+                <Button
+                    android:id="@+id/dt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addTwoForPlayer2"
+                    android:text="@string/ss"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/bf12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOneForPlayer2"
+                    android:text="@string/ss2"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/stw2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOnlyOneForPlayer2"
+                    android:text="@string/stw"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/lms2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOnlyOneForPlayer2"
+                    android:text="@string/a"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/tpof2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="addOneForPlayer2"
+                    android:text="@string/tpof"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:id="@+id/changep2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="changeP2name"
+                    android:text="@string/chnm"
+                    android:textColor="@color/heresy_gold"
+                    android:textSize="@dimen/btn_text_size" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invisibleEditor"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/editPText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:maxLength="10" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:onClick="exchangeNameP1"
+            android:text="@string/OK"
+            android:textColor="@color/heresy_gold"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/invisibleEditor2"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/editPText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:maxLength="10" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:onClick="exchangeNameP2"
+            android:text="@string/OK"
+            android:textColor="@color/heresy_gold"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+</RelativeLayout>

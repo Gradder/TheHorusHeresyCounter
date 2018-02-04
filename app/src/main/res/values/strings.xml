@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">The Horus Heresy Counter</string>
+    <string name="mission_name">Mission</string>
+    <string name="T">T</string>
+    <string name="he">HE</string>
+    <string name="H"> H</string>
+    <string name="orus">ORUS</string>
+    <string name="eresy">ERESY</string>
+    <string name="unoff">Unofficial victory points counter</string>
+    <string name="selector">Select mission:</string>
+    <string name="button_start">Start game</string>
+
+    <string name="player1_name">Player 1</string>
+    <string name="player2_name">Player 2</string>
+    <string name="dt">Death Toll</string>
+    <string name="bf1">Blood Feud +1</string>
+    <string name="bf2">Blood Feud +2</string>
+    <string name="stw">Slay The Warlord</string>
+    <string name="lms">Last Man Standing</string>
+    <string name="tpof">The Price Of Failure</string>
+
+    <string name="chnm">Change name</string>
+    <string name="OK">OK</string>
+
+    <string name="oa">Onslaught Attack</string>
+    <string name="stoo">Seize on Onslaught Objectives</string>
+    <string name="a">Attrition</string>
+    
+    <string name="ss">Shatter Strike (scoring)</string>
+    <string name="ss2">Shatter Strike (denial)</string>
+    
+    <string name="dobj">Dominion Objectives</string>
+    <string name="stwd3">Slay The Warlord (+1 each)</string>
+    <string name="ad3">Attrition (+1 each)</string>
+
+    <string name="podz">Player\`s own deployment zone</string>
+    <string name="nml">No Man\`s Land</string>
+    <string name="opdz">Opposing player\`s deployment zone</string>
+
+    <string name="wol1">War Of Lies (+1)</string>
+    <string name="wol2">War Of Lies (+2)</string>
+    <string name="wol3">War Of Lies (+3)</string>
+    <string name="wol4">War Of Lies (-1 each)</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="low_word">30sp</dimen>
+    <dimen name="high_word">40sp</dimen>
+    <dimen name="paddin_between_words">7dp</dimen>
+    <dimen name="nano_word">14sp</dimen>
+    <dimen name="image_margin">15dp</dimen>
+    <dimen name="margin_for_spinner">5dp</dimen>
+    <dimen name="padding_for_spinner">12dp</dimen>
+    <dimen name="spinner_word">16sp</dimen>
+    <dimen name="select_word">15sp</dimen>
+    <dimen name="margin_for_text_above_spinner">50dp</dimen>
+    <dimen name="button_margin_bottom">80dp</dimen>
+    <dimen name="start_button_text_size">20sp</dimen>
+
+    <dimen name="pnames_margin_top">25dp</dimen>
+    <dimen name="pnames_text_size">24sp</dimen>
+    <dimen name="btn_text_size">15sp</dimen>
+    <dimen name="layout_padding">20dp</dimen>
+    <dimen name="padding_center">5dp</dimen>
+    <dimen name="score_margin">24dp</dimen>
+</resources>
