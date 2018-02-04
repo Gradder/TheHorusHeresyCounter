@@ -54,76 +54,40 @@
 
                 <Button
                     android:id="@+id/dt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOneForPlayer1"
-                    android:text="@string/oa"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/oa" />
 
                 <Button
                     android:id="@+id/bf1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOnlyFiveForPlayer1"
-                    android:text="@string/stoo"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/stoo" />
 
                 <Button
                     android:id="@+id/stw"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOnlyOneForPlayer1"
-                    android:text="@string/stw"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/stw" />
 
                 <Button
                     android:id="@+id/lms"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOnlyOneForPlayer1"
-                    android:text="@string/a"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/a" />
 
                 <Button
                     android:id="@+id/tpof"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOneForPlayer1"
-                    android:text="@string/tpof"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/tpof" />
 
                 <Button
                     android:id="@+id/changep1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
+                    style="@style/heresy_button"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/button_background"
                     android:onClick="changeP1name"
-                    android:text="@string/chnm"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/chnm" />
             </LinearLayout>
         </ScrollView>
 
@@ -171,76 +135,40 @@
 
                 <Button
                     android:id="@+id/dt2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOneForPlayer2"
-                    android:text="@string/oa"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/oa" />
 
                 <Button
                     android:id="@+id/bf12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOnlyFiveForPlayer2"
-                    android:text="@string/stoo"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/stoo" />
 
                 <Button
                     android:id="@+id/stw2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOnlyOneForPlayer2"
-                    android:text="@string/stw"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/stw" />
 
                 <Button
                     android:id="@+id/lms2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOnlyOneForPlayer2"
-                    android:text="@string/a"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/a" />
 
                 <Button
                     android:id="@+id/tpof2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_background"
+                    style="@style/heresy_button"
                     android:onClick="addOneForPlayer2"
-                    android:text="@string/tpof"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/tpof" />
 
                 <Button
                     android:id="@+id/changep2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
+                    style="@style/heresy_button"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/button_background"
                     android:onClick="changeP2name"
-                    android:text="@string/chnm"
-                    android:textColor="@color/heresy_gold"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:text="@string/chnm" />
 
             </LinearLayout>
         </ScrollView>
