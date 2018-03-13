@@ -7,20 +7,25 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
     int scorePlayer1 = 0;
     int scorePlayer2 = 0;
     int parsedColor = Color.parseColor("#652E2E");
+    int parsedColorNew = Color.parseColor("#802E2E");
 
     private LinearLayout editorLayout;
     private LinearLayout editorLayout2;
-
-    TextView p1name, p2name, dt, dt2, bf1, bf2, bf12, bf22, stw, lms, stw2, lms2, tpof, tpof2, changep1, changep2, minus, minus2;
+    private ArrayList<View> disabledButtons = new ArrayList<View>();
+    private ArrayList<View> disabledButtons2 = new ArrayList<View>();
+    TextView p1name, p2name, dt, dt2, bf1, bf2, bf12, bf22, stw, lms, stw2, lms2, tpof, tpof2, changep1, changep2, minus, minus2, reset1, reset2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +83,8 @@ public class MainActivity extends Activity {
                 tpof2 = (TextView) findViewById(R.id.tpof2);
                 changep1 = (TextView) findViewById(R.id.changep1);
                 changep2 = (TextView) findViewById(R.id.changep2);
+                reset1 = (TextView) findViewById(R.id.reset1);
+                reset2 = (TextView) findViewById(R.id.reset2);
 
                 p1name.setTypeface(typefaceH);
                 p2name.setTypeface(typefaceH);
@@ -95,6 +102,9 @@ public class MainActivity extends Activity {
                 tpof2.setTypeface(typefaceH);
                 changep1.setTypeface(typefaceH);
                 changep2.setTypeface(typefaceH);
+                reset1.setTypeface(typefaceH);
+                reset2.setTypeface(typefaceH);
+
                 break;
             case 2:
                 p1name = (TextView) findViewById(R.id.p1name);
@@ -111,6 +121,8 @@ public class MainActivity extends Activity {
                 tpof2 = (TextView) findViewById(R.id.tpof2);
                 changep1 = (TextView) findViewById(R.id.changep1);
                 changep2 = (TextView) findViewById(R.id.changep2);
+                reset1 = (TextView) findViewById(R.id.reset1);
+                reset2 = (TextView) findViewById(R.id.reset2);
 
                 p1name.setTypeface(typefaceH);
                 p2name.setTypeface(typefaceH);
@@ -126,7 +138,8 @@ public class MainActivity extends Activity {
                 tpof2.setTypeface(typefaceH);
                 changep1.setTypeface(typefaceH);
                 changep2.setTypeface(typefaceH);
-
+                reset1.setTypeface(typefaceH);
+                reset2.setTypeface(typefaceH);
                 break;
 
             case 4:
@@ -142,6 +155,8 @@ public class MainActivity extends Activity {
                 tpof2 = (TextView) findViewById(R.id.tpof2);
                 changep1 = (TextView) findViewById(R.id.changep1);
                 changep2 = (TextView) findViewById(R.id.changep2);
+                reset1 = (TextView) findViewById(R.id.reset1);
+                reset2 = (TextView) findViewById(R.id.reset2);
 
                 p1name.setTypeface(typefaceH);
                 p2name.setTypeface(typefaceH);
@@ -155,6 +170,8 @@ public class MainActivity extends Activity {
                 tpof2.setTypeface(typefaceH);
                 changep1.setTypeface(typefaceH);
                 changep2.setTypeface(typefaceH);
+                reset1.setTypeface(typefaceH);
+                reset2.setTypeface(typefaceH);
                 break;
             case 6:
                 p1name = (TextView) findViewById(R.id.p1name);
@@ -175,6 +192,8 @@ public class MainActivity extends Activity {
                 changep2 = (TextView) findViewById(R.id.changep2);
                 minus = (TextView) findViewById(R.id.minus);
                 minus2 = (TextView) findViewById(R.id.minus2);
+                reset1 = (TextView) findViewById(R.id.reset1);
+                reset2 = (TextView) findViewById(R.id.reset2);
 
                 p1name.setTypeface(typefaceH);
                 p2name.setTypeface(typefaceH);
@@ -194,6 +213,8 @@ public class MainActivity extends Activity {
                 changep2.setTypeface(typefaceH);
                 minus.setTypeface(typefaceH);
                 minus2.setTypeface(typefaceH);
+                reset1.setTypeface(typefaceH);
+                reset2.setTypeface(typefaceH);
                 break;
             default:
         }
@@ -264,6 +285,7 @@ public class MainActivity extends Activity {
         scorePlayer1++;
         v.setBackgroundColor(parsedColor);
         v.setEnabled(false);
+        disabledButtons.add(v);
         displayForPlayer1(scorePlayer1);
     }
 
@@ -271,6 +293,7 @@ public class MainActivity extends Activity {
         scorePlayer2++;
         v.setBackgroundColor(parsedColor);
         v.setEnabled(false);
+        disabledButtons2.add(v);
         displayForPlayer2(scorePlayer2);
     }
 
@@ -278,6 +301,7 @@ public class MainActivity extends Activity {
         scorePlayer1 += 5;
         v.setBackgroundColor(parsedColor);
         v.setEnabled(false);
+        disabledButtons.add(v);
         displayForPlayer1(scorePlayer1);
     }
 
@@ -285,6 +309,7 @@ public class MainActivity extends Activity {
         scorePlayer2 += 5;
         v.setBackgroundColor(parsedColor);
         v.setEnabled(false);
+        disabledButtons2.add(v);
         displayForPlayer2(scorePlayer2);
     }
 
@@ -328,5 +353,37 @@ public class MainActivity extends Activity {
             editor2.setText("");
             editorLayout2.setVisibility(View.INVISIBLE);
         }
+    }
+
+    public void resetPlayer1(View v) {
+        resetScore(true);
+    }
+
+    public void resetPlayer2(View v) {
+        resetScore(false);
+    }
+
+    public void resetScore(boolean firstPlayer) {
+        if (firstPlayer) {
+            scorePlayer1 = 0;
+            displayForPlayer1(scorePlayer1);
+
+            for (View buttons : disabledButtons) {
+                buttons.setEnabled(true);
+                buttons.setBackgroundColor(parsedColorNew);
+            }
+            disabledButtons.clear();
+
+        } else {
+            scorePlayer2 = 0;
+            displayForPlayer2(scorePlayer2);
+
+            for (View buttons : disabledButtons2) {
+                buttons.setEnabled(true);
+                buttons.setBackgroundColor(parsedColorNew);
+            }
+            disabledButtons2.clear();
+        }
+
     }
 }

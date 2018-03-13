@@ -94,6 +94,14 @@
                     android:layout_marginTop="16dp"
                     android:onClick="changeP1name"
                     android:text="@string/chnm" />
+
+                <Button
+                    android:id="@+id/reset1"
+                    style="@style/heresy_button"
+                    android:layout_marginTop="16dp"
+                    android:onClick="resetPlayer1"
+                    android:text="@string/reset" />
+
             </LinearLayout>
         </ScrollView>
 
@@ -181,6 +189,13 @@
                     android:layout_marginTop="16dp"
                     android:onClick="changeP2name"
                     android:text="@string/chnm" />
+
+                <Button
+                    android:id="@+id/reset2"
+                    style="@style/heresy_button"
+                    android:layout_marginTop="16dp"
+                    android:onClick="resetPlayer2"
+                    android:text="@string/reset" />
 
             </LinearLayout>
         </ScrollView>

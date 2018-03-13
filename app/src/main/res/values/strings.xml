@@ -42,4 +42,6 @@
     <string name="wol3">War Of Lies (+3)</string>
     <string name="wol4">War Of Lies (-1 each)</string>
 
+    <string name="reset">Reset</string>
+
 </resources>
