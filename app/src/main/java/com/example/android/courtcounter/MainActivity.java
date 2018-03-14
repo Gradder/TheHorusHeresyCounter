@@ -25,7 +25,26 @@ public class MainActivity extends Activity {
     private LinearLayout editorLayout2;
     private ArrayList<View> disabledButtons = new ArrayList<View>();
     private ArrayList<View> disabledButtons2 = new ArrayList<View>();
-    TextView p1name, p2name, dt, dt2, bf1, bf2, bf12, bf22, stw, lms, stw2, lms2, tpof, tpof2, changep1, changep2, minus, minus2, reset1, reset2;
+    TextView p1name;
+    TextView p2name;
+    TextView dt;
+    TextView dt2;
+    TextView bf1;
+    TextView bf2;
+    TextView bf12;
+    TextView bf22;
+    TextView stw;
+    TextView lms;
+    TextView stw2;
+    TextView lms2;
+    TextView tpof;
+    TextView tpof2;
+    TextView changep1;
+    TextView changep2;
+    TextView minus;
+    TextView minus2;
+    TextView reset1;
+    TextView reset2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -363,7 +382,7 @@ public class MainActivity extends Activity {
         resetScore(false);
     }
 
-    public void resetScore(boolean firstPlayer) {
+    private void resetScore(boolean firstPlayer) {
         if (firstPlayer) {
             scorePlayer1 = 0;
             displayForPlayer1(scorePlayer1);
